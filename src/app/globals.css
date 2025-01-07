@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    
+  }
+}
+
+body {
+  box-sizing: content-box;
+  background-color: #F5F5F5;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
