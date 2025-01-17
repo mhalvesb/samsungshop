@@ -30,7 +30,7 @@ export default function SmartPhones(){
         <div>
             <MyHeader/>
 
-            <div className="flex px-[15%] py-5">
+            <div className="flex px-[20%] py-5">
                 <aside>
                     <div className="bg-white h-full w-96 px-10 rounded-lg shadow-lg">
                         <div className="py-2">

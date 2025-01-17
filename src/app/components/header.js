@@ -2,7 +2,7 @@ export default function MyHeader(){
     return(
         <header className="flex flex-col">
           
-            <div className="bg-black w-screen h-24 px-[15%] flex items-center border-b-2 border-zinc-500">
+            <div className="bg-black w-screen h-24 px-[20%] flex items-center border-b-2 border-zinc-500">
                 <img src="/assets/icons/2164197.png" alt="star" className="w-10 h-10 mr-2  cursor-pointer"></img>
                 <h1 className="text-white text-4xl cursor-pointer">SmartPoint</h1>
                 <div className="flex items-center w-11/12 relative box-border">
