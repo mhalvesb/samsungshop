@@ -29,12 +29,12 @@ export default function Samsung(){
             <main className="px-[20%] py-10 flex flex-col bg-white justify-between">
                 <div className="flex justify-between items-center">
                     <img src="/assets/phone/a6.webp" className="w-full rounded-lg border-2 mr-4 mb-4"/>
-                        <div className="w-full">
+                        <div className="w-full ml-10">
                         <p className="text-3xl font-bold border-b-2 pb-4">Samsung Galaxy S21 5G 128GB Azul</p>
                         <p className=" my-1 text-lg flex flex-col">Por apenas: <span className="font-bold text-green-800 text-3xl my-1">R$ 999,99</span>no boleto ou no pix</p>
-                        <p className="text-sm">Ou por <span className="font-bold text-green-800 text-3xl my-1">R$ 999,99</span> no cartão em até 10x de 99,99</p>
+                        <p className="text-sm">Ou por <span className="font-medium text-green-900 text-2xl my-1">R$ 999,99 </span> no cartão em até 10x de 99,99</p>
                         <div className="flex flex-col">
-                            <label htmlFor="quantidade" >Quantidade</label>
+                            <label htmlFor="quantidade" className="text-gray-800 font-medium pt-4 pb-2">Quantidade</label>
                             <div>
                                 <button className="w-96 bg-gray-200 rounded-lg text-start pl-4 h-10" onClick={() => functionQVisiblity()}>
                                     <span>{quantity} {quantity > 1 ? "unidades" : "unidade"}</span>

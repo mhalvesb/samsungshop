@@ -4,7 +4,7 @@ import MyHeader from "../components/header";
 import MyContents from "../boxes/contents";
 import Filter from "../boxes/filters";
 import { useState, useEffect } from "react";
-export default function SmartPhones(){
+export default function SmartWatch(){
 
     const [selectedSpace, updateSpace] = useState("todosgb");
     const [selectedModels, updateModels] = useState("");
@@ -36,18 +36,20 @@ export default function SmartPhones(){
                         <div className="py-2">
                             <p className="text-lg font-medium border-b-2 border-gray-400 mb-2">Modelos</p>
                             <div >
-                            <Filter name={"space"} htmlfor={"s20"} isChecked={selectedModels === "s20"} change={() => onChangeModels("s20")} labelName={"Samsung Galaxy S20"} id={"s20"}/>
-                            <Filter name={"space"} htmlfor={"s21"} isChecked={selectedModels === "s21"} change={() => onChangeModels("s21")} labelName={"Samsung Galaxy S21"} id={"s21"}/>
+                            <Filter name={"space"} htmlfor={"gf5"} isChecked={selectedModels === "gf5"} change={() => onChangeModels("gf5")} labelName={"Galaxy Watch 5"} id={"gf5"}/>
+                            <Filter name={"space"} htmlfor={"gf6"} isChecked={selectedModels === "gf6"} change={() => onChangeModels("gf6")} labelName={"Galaxy Watch 6"} id={"gf6"}/>
+                            <Filter name={"space"} htmlfor={"gw7"} isChecked={selectedModels === "gw7"} change={() => onChangeModels("gw7")} labelName={"Galaxy Watch 7"} id={"gw7"}/>
+                            <Filter name={"space"} htmlfor={"gf3"} isChecked={selectedModels === "gf3"} change={() => onChangeModels("gf3")} labelName={"Galaxy Fit 3"} id={"gf3"}/>
                             </div>
                         </div>
                         <div className="py-2">
-                            <p className="text-lg font-medium border-b-2 border-gray-400 mb-2">Espaço</p>
+                            <p className="text-lg font-medium border-b-2 border-gray-400 mb-2">Memoria Interna</p>
                             <div >
-                                <Filter name={"space"} htmlfor={"32gb"} isChecked={selectedSpace === "32gb"} change={() => onChangeSpace("32gb")} labelName={"32GB"} id={"32gb"}/>
-                                <Filter name={"space"} htmlfor={"64gb"} isChecked={selectedSpace === "64gb"} change={() => onChangeSpace("64gb")} labelName={"64GB"} id={"64gb"}/>
-                                <Filter name={"space"} htmlfor={"128gb"} isChecked={selectedSpace === "128gb"} change={() => onChangeSpace("128gb")} labelName={"128GB"} id={"128gb"}/>
-                                <Filter name={"space"} htmlfor={"256gb"} isChecked={selectedSpace === "256gb"} change={() => onChangeSpace("256gb")} labelName={"256GB"} id={"256gb"}/>
-                                <Filter name={"space"} htmlfor={"512gb"} isChecked={selectedSpace === "512gb"} change={() => onChangeSpace("512gb")} labelName={"512GB"} id={"512gb"}/>
+                                <Filter name={"space"} htmlfor={"128MB"} isChecked={selectedSpace === "128MB"} change={() => onChangeSpace("128MB")} labelName={"128MB"} id={"128MB"}/>
+                                <Filter name={"space"} htmlfor={"256MB"} isChecked={selectedSpace === "256MB"} change={() => onChangeSpace("256MB")} labelName={"256MB"} id={"256MB"}/>
+                                <Filter name={"space"} htmlfor={"1GB"} isChecked={selectedSpace === "1GB"} change={() => onChangeSpace("1GB")} labelName={"1GB"} id={"1GB"}/>
+                                <Filter name={"space"} htmlfor={"4GB"} isChecked={selectedSpace === "4GB"} change={() => onChangeSpace("4GB")} labelName={"4GB"} id={"4GB"}/>
+                                <Filter name={"space"} htmlfor={"16GB"} isChecked={selectedSpace === "16GB"} change={() => onChangeSpace("16GB")} labelName={"16GB"} id={"16GB"}/>
                                 <Filter name={"space"} htmlfor={"todosgb"} isChecked={selectedSpace === "todosgb"} change={() => onChangeSpace("todosgb")} labelName={"Todos"} id={"todosgb"}/>
                             </div>
                         </div>
@@ -64,13 +66,13 @@ export default function SmartPhones(){
                     
                 </aside>
                 <div className="ml-10">
-                    <p className="text-2xl font-bold ml-2">Celulares samsung</p>
+                    <p className="text-2xl font-bold ml-2">SmartWatch</p>
                 <div className="grid grid-cols-3 gap-2">
-                    <MyContents  PhoneName={"Samsung Galaxy S23"} Price={"1.799,00"} CardPrice={"1.899,99"} PhonePhoto={"/assets/phone/s23fe.webp"}/>
-                    <MyContents  PhoneName={"Samsung Galaxy S23"} Price={"1.799,00"} CardPrice={"1.899,99"} PhonePhoto={"/assets/phone/s23fe.webp"}/>
-                    <MyContents  PhoneName={"Samsung Galaxy S23"} Price={"1.799,00"} CardPrice={"1.899,99"} PhonePhoto={"/assets/phone/s23fe.webp"}/>
-                    <MyContents  PhoneName={"Samsung Galaxy S23"} Price={"1.799,00"} CardPrice={"1.899,99"} PhonePhoto={"/assets/phone/s23fe.webp"}/>
-                    <MyContents  PhoneName={"Samsung Galaxy S23"} Price={"1.799,00"} CardPrice={"1.899,99"} PhonePhoto={"/assets/phone/s23fe.webp"}/>
+                    <MyContents  PhoneName={"Galaxy Watch 6 Preto"} Price={"1.619,00"} CardPrice={"1.799,99"} PhonePhoto={"/assets/gwatch/g7.webp"}/>
+                    <MyContents  PhoneName={"Galaxy Fit 3 Preto"} Price={"350,00"} CardPrice={"369,99"} PhonePhoto={"/assets/gwatch/g8.webp"}/>
+                    <MyContents  PhoneName={"Galaxy Watch 5"} Price={"1.519,00"} CardPrice={"1.699,99"} PhonePhoto={"/assets/gwatch/g6.webp"}/>
+                    <MyContents  PhoneName={"Galaxy Watch 5 Pro"} Price={"1.656,00"} CardPrice={"1.840,99"} PhonePhoto={"/assets/gwatch/g10.webp"}/>
+                    
                 </div>
                 </div>
             </div>
