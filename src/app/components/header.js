@@ -19,6 +19,26 @@ export default function MyHeader(){
     const smartWatchPage = () =>{
         router.push("/smartwatch");
     }
+
+    const tabletsPage = () =>{
+        router.push("/tablet")
+    }
+
+    const tvsPage = () =>{
+        router.push("/televisores");
+    }
+
+    const fonesPage = () =>{
+        router.push("/fones");
+    }
+
+    const monitoresPage = () =>{
+        router.push("/monitores");
+    }
+
+    const loginPage = () =>{
+        router.push("/login");
+    }
     return(
         <header className="flex flex-col">
           
@@ -33,7 +53,7 @@ export default function MyHeader(){
                 <div className="flex">
                 <img src="/assets/icons/heart.png" className="w-5 h-5 mx-4 cursor-pointer" alt=""></img>
                 <img src="/assets/icons/bag.png" className="w-5 h-5 mx-4 cursor-pointer" alt=""></img>
-                <img src="/assets/icons/user.png" className="w-5 h-5 mx-4 cursor-pointer" alt=""></img>
+                <img src="/assets/icons/user.png" className="w-5 h-5 mx-4 cursor-pointer" alt="" onClick={() => loginPage()}></img>
                 </div>
                 </div>
             </div>
@@ -42,10 +62,10 @@ export default function MyHeader(){
                 <ul className="flex justify-center w-full text-lg">
                   <li className="px-4 cursor-pointer transition-all hover:bg-white hover:text-black rounded-xl" onClick={() => smartPhonePage()}>SmartPhones</li>
                   <li className="px-4 cursor-pointer transition-all hover:bg-white hover:text-black rounded-xl" onClick={() =>smartWatchPage()}>SmartWatch</li>
-                  <li className="px-4 cursor-pointer transition-all hover:bg-white hover:text-black rounded-xl">Tablets</li>
-                  <li className="px-4 cursor-pointer transition-all hover:bg-white hover:text-black rounded-xl">Televisores</li>
-                  <li className="px-4 cursor-pointer transition-all hover:bg-white hover:text-black rounded-xl">Fones</li>
-                  <li className="px-4 cursor-pointer transition-all hover:bg-white hover:text-black rounded-xl">Monitores</li>
+                  <li className="px-4 cursor-pointer transition-all hover:bg-white hover:text-black rounded-xl" onClick={() => tabletsPage()}>Tablets</li>
+                  <li className="px-4 cursor-pointer transition-all hover:bg-white hover:text-black rounded-xl" onClick={() => tvsPage()}>Televisores</li>
+                  <li className="px-4 cursor-pointer transition-all hover:bg-white hover:text-black rounded-xl" onClick={() => fonesPage()}>Fones</li>
+                  <li className="px-4 cursor-pointer transition-all hover:bg-white hover:text-black rounded-xl" onClick={() => monitoresPage()}>Monitores</li>
                 </ul>
             </div>
         </header>
