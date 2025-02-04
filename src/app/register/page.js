@@ -1,4 +1,15 @@
+"use client"
+
+
+import {useRouter} from "next/navigation";
+
 export default function Login(){
+
+    const router = useRouter();
+
+    const loginPage = () =>{
+        router.push("/login");
+    }
     return(
         <div className="w-full h-screen flex items-center justify-center bg-gray-800">
             <div className="flex h-3/4">
@@ -10,8 +21,8 @@ export default function Login(){
                     </div>
                     <h1 className="text-center text-2xl font-medium text-gray-500">Bem vindo ao SmartPoint</h1>
                     <div className="flex flex-col">
-                        <label htmlFor="pass" className="mb-1 text-gray-500">Seu nome</label>
-                        <input type="text" id="pass" name="pass" className="h-6 bg-transparent outline-none border-b-2 w-96"/>
+                        <label htmlFor="name" className="mb-1 text-gray-500">Seu nome</label>
+                        <input type="text" id="name" name="name" className="h-6 bg-transparent outline-none border-b-2 w-96"/>
                     </div>
 
                     <div className="flex flex-col">
@@ -23,7 +34,7 @@ export default function Login(){
                         <input type="text" id="pass" name="pass" className="h-6 bg-transparent outline-none border-b-2 w-96"/>
                     </div>
                     <button className="bg-black text-white font-semibold w-full py-2 my-4 rounded-lg">Cadastrar</button>
-                    <p className="cursor-pointer">Já possui uma conta?</p>
+                    <p className="cursor-pointer" onClick={() => loginPage()}>Já possui uma conta?</p>
                 </div>
 
                 <img src="/assets/login/shopping.png" alt="banner" className="h-full w-full"/>

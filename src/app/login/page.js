@@ -1,7 +1,26 @@
+"use client"
+
+import { useRouter } from "next/navigation";
+
+import MyHeader from "../components/header";
+
+
+
+
 export default function Login(){
+    const router = useRouter();
+
+
+    const registerPage = () =>{
+        router.push("/register");
+    }
     return(
+        <div>
+            <MyHeader withContents={true}/>
+        
         <div className="w-full h-screen flex items-center justify-center bg-gray-800">
-            <div className="flex h-3/4">
+            
+            <div className="flex h-3/4 px-[20%]">
                 <img src="/assets/login/shopping.png" alt="banner" className="h-full w-full"/>
                 <div className="bg-gray-50 flex flex-col items-center justify-between h-full px-20 py-20">
                     <div className="flex items-center justify-center mb-10">
@@ -21,9 +40,10 @@ export default function Login(){
                         <p className="text-right mt-1 text-gray-500 cursor-pointer">Esqueceu a senha?</p>
                     </div>
                     <button className="bg-black text-white font-semibold w-full py-2 my-4 rounded-lg">Entrar</button>
-                    <p className="cursor-pointer">Não possui uma conta?</p>
+                    <p className="cursor-pointer" onClick={() => registerPage()}>Não possui uma conta?</p>
                 </div>
             </div>
+        </div>
         </div>
     )
 }
